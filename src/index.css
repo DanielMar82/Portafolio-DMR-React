@@ -1,0 +1,56 @@
+#root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  height: 100%;
+  margin: 0;
+  /* padding: 100px 0 0; */
+
+  color-scheme: light dark;
+  color: rgb(255, 244, 222);
+  background-color: #05112c;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+body {
+  background-color: #09235a;
+  margin: 0;
+  /* padding: 40px; */
+  /* height: 100%; */
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+h2 {
+  line-height: 1;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  font-size: 20px;
+}
+
+.PFPImage {
+  margin: 20px auto 30px;
+  width: 400px;
+  height: 400px;
+  /* background-color: black; */
+  background-image: url("/IconMetal.png");
+  background-size: cover;
+  background-position: center;
+  border-radius: 100%;
+}
+

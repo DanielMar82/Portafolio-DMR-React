@@ -1,0 +1,28 @@
+.Studies {
+    height: 100%;
+    padding: 0px 60px;
+    /* margin: 20px auto; */
+}
+
+.Grados {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin: 40px auto;
+}
+
+.grado {
+    text-align: left;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px 20px;
+    gap: 20px;
+    background-color: #051230;
+    box-shadow: rgb(12 12 12 / 41%) 8px 8px 11px;
+    border-radius: 80px;
+}
+
+.grado h2 {
+    text-align: center;
+}
