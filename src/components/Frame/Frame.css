@@ -1,0 +1,25 @@
+@keyframes frameTop {
+  0% {
+    height: 100vh;
+  }
+  100% {
+    height: 40px;
+  }
+}
+
+@keyframes frameSide {
+  0% {
+    width: 100vw;
+  }
+  100% {
+    width: 40px;
+  }
+}
+
+.frame-top {
+  animation: frameTop 2s ease forwards;
+}
+
+.frame-side {
+  animation: frameSide 2s ease forwards;
+}

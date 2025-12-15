@@ -1,0 +1,53 @@
+import SectionStudies from "./SectionStudies";
+
+function Studies() {
+  const articlesCursos = [
+    {
+      subtitle: "DAW",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia viverra vulputate. Mauris ante purus, tempor etsollicitudin in, pulvinar quis mauris.",
+    },
+    {
+      subtitle: "DAM",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia viverra vulputate. Mauris ante purus, tempor etsollicitudin in, pulvinar quis mauris.",
+    },
+  ];
+
+  const articlesConocimientos = [
+    {
+      subtitle: "Frontend",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia viverra vulputate. Mauris ante purus, tempor etsollicitudin in, pulvinar quis mauris.",
+    },
+    {
+      subtitle: "Backend",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia viverra vulputate. Mauris ante purus, tempor etsollicitudin in, pulvinar quis mauris.",
+    },
+    {
+      subtitle: "Bases de datos",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia viverra vulputate. Mauris ante purus, tempor etsollicitudin in, pulvinar quis mauris.",
+    },
+    {
+      subtitle: "IA",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia viverra vulputate. Mauris ante purus, tempor etsollicitudin in, pulvinar quis mauris.",
+    },
+  ];
+
+  return (
+    <>
+      <main className="p-7 flex flex-col gap-44">
+        <SectionStudies
+          title="Estudios cursados"
+          position={true}
+          articles={articlesCursos}
+        />
+
+        <SectionStudies
+          title="Conocimientos en el ámbito"
+          position={false}
+          articles={articlesConocimientos}
+        />
+      </main>
+    </>
+  );
+}
+
+export default Studies;

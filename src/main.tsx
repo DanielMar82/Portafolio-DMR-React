@@ -1,13 +1,15 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import Frame from "./Frame/Frame.tsx";
+import Frame from "./components/Frame/Frame.tsx";
 import App from "./App.tsx";
-import Footer from "./Footer/Footer.tsx";
-import Studies from "./Studies.tsx";
+import { BrowserRouter } from "react-router";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <Frame />
+    <BrowserRouter>
+      {/* <Frame /> */}
+      <App />
+    </BrowserRouter>
   </StrictMode>
 );

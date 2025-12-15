@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 #root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -28,12 +30,12 @@ body {
   /* height: 100%; */
 }
 
-h1 {
+/* h1 {
   font-size: 3.2em;
   line-height: 1.1;
-}
+} */
 
-h2 {
+/* h2 {
   line-height: 1;
   margin: 0;
 }
@@ -41,16 +43,14 @@ h2 {
 p {
   margin: 0;
   font-size: 20px;
-}
+} */
 
-.PFPImage {
+/* .PFPImage {
   margin: 20px auto 30px;
   width: 400px;
   height: 400px;
-  /* background-color: black; */
   background-image: url("/IconMetal.png");
   background-size: cover;
   background-position: center;
   border-radius: 100%;
-}
-
+} */

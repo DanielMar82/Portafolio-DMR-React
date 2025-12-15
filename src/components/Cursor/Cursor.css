@@ -1,0 +1,11 @@
+@media (pointer: fine) {
+  .cursorCustom {
+    display: block;
+  }
+}
+
+@media (pointer: coarse) {
+  .cursorCustom {
+    display: none;
+  }
+}

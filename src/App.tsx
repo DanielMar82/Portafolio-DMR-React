@@ -1,18 +1,30 @@
+import { Route, Routes } from "react-router";
 import "./App.css";
+
+import Inicio from "./routes/Inicio";
+import NotFound from "./routes/NotFound";
+import SobreMi from "./routes/SobreMi";
+
+import Footer from "./components/Footer";
+import Frame from "./components/Frame/Frame";
+import Cursor from "./components/Cursor/Cursor";
 
 function App() {
   return (
     <>
-      {/* <p>Yo soy...</p> */}
-      <div className="Intro">
-        <h1>Daniel Martín Ruiz</h1>
-        <div className="PFPImage"></div>
-        <p>
-          Programador junior con 2 años de experiencia en el mundo del
-          desarrollo software y web, con aspiraciones a futuros aprendizajes
-        </p>
-        <a>ENLACES</a>
-      </div>
+      <Frame />
+
+      <Cursor />
+
+      <Routes>
+        <Route path="/" element={<Inicio />}></Route>
+        <Route path="/sobremi" element={<SobreMi />}></Route>
+        <Route path="*" element={<NotFound />} />
+
+        {/* <Route path="/proyectos" element={<Proyectos />}></Route>  PROYECTOS*/}
+      </Routes>
+
+      <Footer bgColor={"#fff4de"} textColor={"#03002a"} />
     </>
   );
 }
