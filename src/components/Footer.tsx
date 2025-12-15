@@ -1,7 +1,7 @@
 const Footer = ({ ...props }) => {
   // bg-[#fff4de] #09235a
 
-  const { bgColor, textColor } = props;
+  const { bgColor } = props;
 
   return (
     <>
