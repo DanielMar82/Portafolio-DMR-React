@@ -1,7 +1,7 @@
-const NotFound = () => {
+const NotFoundPage = () => {
   return (
     <>
-      <div className="bg-[#5a1509] p-20 text-center h-fit">
+      <div className="bg-fixed bg-linear-to-tr from-[#461208] to-[#c73518] p-20 text-center h-fit">
         {/* OPCION 1 */}
         {/* <div className="px-[20%] my-10 gap-6 flex flex-col relative z-10">
           <div className="mx-auto bg-[#2a0400] w-[50%] h-full top-[50px] rounded-[80px] inset-0 absolute z-0" />
@@ -17,7 +17,7 @@ const NotFound = () => {
         </div> */}
 
         {/* OPCION 2 */}
-        <div className="py-[90px] px-[10%] mx-[10%] rounded-[100px] my-10 text-center flex flex-col gap-6 relative z-10 bg-[#2a0400]">
+        <div className="shadow-2xl bg-linear-to-tr from-[#2a0400] to-[#6e1100] py-[90px] px-[10%] mx-[10%] rounded-[100px] my-10 text-center flex flex-col gap-6 relative z-10">
           {/* <div className="mx-auto bg-[#2a0400] w-[50%] h-full top-[50px] rounded-[80px] inset-0 absolute z-0" /> */}
 
           <h1 className="text-6xl text-center font-bold z-10">
@@ -36,4 +36,4 @@ const NotFound = () => {
   );
 };
 
-export default NotFound;
+export default NotFoundPage;

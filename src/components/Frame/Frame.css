@@ -1,4 +1,4 @@
-@keyframes frameTop {
+@keyframes frameTopOpen {
   0% {
     height: 100vh;
   }
@@ -7,7 +7,16 @@
   }
 }
 
-@keyframes frameSide {
+@keyframes frameTopClose {
+  0% {
+    height: 40px;
+  }
+  100% {
+    height: 100vh;
+  }
+}
+
+@keyframes frameSideOpen {
   0% {
     width: 100vw;
   }
@@ -16,10 +25,27 @@
   }
 }
 
-.frame-top {
-  animation: frameTop 2s ease forwards;
+@keyframes frameSideClose {
+  0% {
+    width: 40px;
+  }
+  100% {
+    width: 100vw;
+  }
 }
 
-.frame-side {
-  animation: frameSide 2s ease forwards;
+.frame-top-open {
+  animation: frameTopOpen 1.5s ease-out forwards;
+}
+
+.frame-top-close {
+  animation: frameTopClose 1.5s ease-out forwards;
+}
+
+.frame-side-open {
+  animation: frameSideOpen 1.5s ease-out forwards;
+}
+
+.frame-side-close {
+  animation: frameSideClose 1.5s ease-out forwards;
 }

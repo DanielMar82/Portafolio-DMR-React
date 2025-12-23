@@ -11,8 +11,9 @@ const Intro = () => {
         </p> */}
 
       {/* INTRO OPCION 2 */}
+      {/* bg-[#09235a] */}
       <div className="px-[20%] gap-6 flex flex-col relative z-10">
-        <div className="mx-auto shadow-2xl bg-[#09235a] w-[67%] h-full top-[50px] left-20 rounded-[80px] inset-0 absolute z-0" />
+        <div className="mx-auto shadow-2xl  bg-linear-to-tr from-[#09235a] to-[#5188ff] w-[67%] h-full top-[50px] left-20 rounded-[80px] inset-0 absolute z-0" />
 
         <div className="-translate-x-15 items-stretch flex justify-between z-10 text-8xl text-left">
           <div className="[text-shadow:10px_10px_20px_rgba(0,0,0,0.5)] flex font-bold flex-col self-stretch justify-between">

@@ -3,7 +3,7 @@ const Projects = () => {
     <>
       <main className="flex flex-col gap-9">
         <section className="flex flex-row justify-around gap-[100px] ">
-          <article className="bg-[#5459b8] text-left p-6 rounded-t-4xl rounded-bl-4xl">
+          <article className="bg-[#5459b8] shadow-[20px_10px_20px_rgba(0,0,0,0.3)] text-left p-6 rounded-t-4xl rounded-bl-4xl">
             <h1 className="text-3xl">Projecto 1</h1>
             <p className="text-xl">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
@@ -12,7 +12,7 @@ const Projects = () => {
             </p>
           </article>
 
-          <article className="bg-[#5459b8] text-left p-6 rounded-t-4xl rounded-br-4xl">
+          <article className="bg-[#5459b8] shadow-[20px_10px_20px_rgba(0,0,0,0.3)] text-left p-6 rounded-t-4xl rounded-br-4xl">
             <h1 className="text-3xl">Projecto 2</h1>
             <p className="text-xl">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
@@ -32,7 +32,7 @@ const Projects = () => {
             </p>
           </article> */}
 
-          <div className="bg-[#fff4de] text-5xl w-min m-auto text-[#09235a] rounded-3xl p-10">
+          <div className="bg-[#fff4de] shadow-2xl text-5xl w-min m-auto text-[#09235a] rounded-3xl p-10">
             Mis proyectos
           </div>
 
@@ -46,8 +46,8 @@ const Projects = () => {
           </article> */}
         </section>
 
-        <section className="flex flex-row justify-around gap-[100px] ">
-          <article className="bg-[#5459b8] text-left p-6 rounded-b-4xl rounded-tl-4xl">
+        <section className="flex  flex-row justify-around gap-[100px] ">
+          <article className="bg-[#5459b8] shadow-[20px_10px_20px_rgba(0,0,0,0.3)] text-left p-6 rounded-b-4xl rounded-tl-4xl">
             <h1 className="text-3xl">Projecto 1</h1>
             <p className="text-xl">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
@@ -56,7 +56,7 @@ const Projects = () => {
             </p>
           </article>
 
-          <article className="bg-[#5459b8] text-left p-6 rounded-b-4xl rounded-tr-4xl">
+          <article className="bg-[#5459b8] shadow-[20px_10px_20px_rgba(0,0,0,0.3)] text-left p-6 rounded-b-4xl rounded-tr-4xl">
             <h1 className="text-3xl">Projecto 2</h1>
             <p className="text-xl">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
