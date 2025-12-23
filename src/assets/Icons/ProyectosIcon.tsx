@@ -9,7 +9,6 @@ const ProyectosIcon = ({
   size = 50,
   color = "currentColor",
   className = "",
-  rotate = 180,
 }: IconProps) => {
   return (
     <svg
