@@ -30,6 +30,9 @@ const NotFoundPage = () => {
             La página introducida no existe o es erronea, compruebe la url para
             una búsqueda deseada.
           </p>
+          <p>
+            Si hay algún problema con la web no dude en contactarme a mi correo.
+          </p>
         </div>
       </div>
     </>

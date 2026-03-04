@@ -6,7 +6,7 @@ type IconProps = {
 };
 
 const ArrowIcon = ({
-  size = 24,
+  size = 30,
   color = "currentColor",
   className = "",
   rotate = 180,

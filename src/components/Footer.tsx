@@ -1,3 +1,9 @@
+import { Link } from "react-router";
+import EmailIcon from "../assets/Icons/EmailIcon";
+import { GithubIcon } from "../assets/Icons/GithubIcon";
+import InstagramIcon from "../assets/Icons/InstagramIcon";
+import { LinkedinIcon } from "../assets/Icons/LinkedinIcon";
+
 const Footer = ({ ...props }) => {
   // bg-[#fff4de] #09235a
 
@@ -10,19 +16,38 @@ const Footer = ({ ...props }) => {
       >
         {/* <h1>Contacto</h1> */}
         <div className="flex  flex-row gap-3 text-xl font-bold justify-around">
-          <a
-            // href="https://www.instagram.com/dany82_8?igsh=MXh6NHB3bjN3ency"
-            href="/"
+          <Link
             className="cursor-grow"
+            to={"/daniel.mar.ruiz.28@gmail.com"}
+            target="_blank"
           >
-            <h2>Instagram</h2>
-          </a>
-          <a href="/" className="cursor-grow">
-            <h2>Correo</h2>
-          </a>
-          <a href="/" className="cursor-grow">
-            <h2>Correo</h2>
-          </a>
+            <EmailIcon className="size-10 text-[#000]" />
+          </Link>
+
+          <Link
+            className="cursor-grow"
+            to={"https://www.linkedin.com/in/danielmr288/"}
+            target="_blank"
+          >
+            <LinkedinIcon className="size-10 text-[#000]" />
+          </Link>
+
+          <Link
+            className="cursor-grow"
+            to={"https://github.com/DanielMar82"}
+            target="_blank"
+          >
+            <GithubIcon className="size-10 text-[#000]" />
+          </Link>
+
+          <Link
+            className="cursor-grow"
+            // to={"https://www.instagram.com/dany82_8?igsh=MXh6NHB3bjN3ency"}
+            to={"/"}
+            target="_blank"
+          >
+            <InstagramIcon className="size-10 text-[#000]" />
+          </Link>
         </div>
       </main>
     </>

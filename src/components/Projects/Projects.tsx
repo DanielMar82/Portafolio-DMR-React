@@ -1,69 +1,43 @@
+import ArticleProjects from "./ArticleProjects";
+
 const Projects = () => {
   return (
     <>
       <main className="flex flex-col gap-9">
-        <section className="flex flex-row justify-around gap-[100px] ">
-          <article className="bg-[#5459b8] shadow-[20px_10px_20px_rgba(0,0,0,0.3)] text-left p-6 rounded-t-4xl rounded-bl-4xl">
-            <h1 className="text-3xl">Projecto 1</h1>
-            <p className="text-xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              tincidunt quis nisl eget egestas. Vestibulum ante ipsum primis in
-              faucibus orci luctus et ultrices posuere cubilia curae;
-            </p>
-          </article>
+        <section className="grid grid-cols-2 gap-x-[100px] gap-y-[50px]">
+          <ArticleProjects
+            projectTitle={"Portfolio web"}
+            projectText={`Página web donde compilo los proyectos que he ido realizando y cuento datos sobre mí como persona.\n
+              Desarrollado con TypeScript y con los frameworks de React.js y Next.js, combinando estilos css con Tailwind css para crear distintas animaciones y un gran diseño.`}
+            roundeClass={"rounded-t-4xl rounded-bl-4xl"}
+          />
 
-          <article className="bg-[#5459b8] shadow-[20px_10px_20px_rgba(0,0,0,0.3)] text-left p-6 rounded-t-4xl rounded-br-4xl">
-            <h1 className="text-3xl">Projecto 2</h1>
-            <p className="text-xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              tincidunt quis nisl eget egestas. Vestibulum ante ipsum primis in
-              faucibus orci luctus et ultrices posuere cubilia curae;
-            </p>
-          </article>
-        </section>
+          <ArticleProjects
+            projectTitle={"CompletAppMe"}
+            projectText={`Aplicación móvil diseñada para para la gestión y organización personal de actividades de entretenimiento.\n
+              CompletAppMe es una aplicación en la que puedes guardar un registro de libros, series, videojuegos y más cosas para completar, pudiendo dar prioridad, marcar como completado o añadir datos varios.`}
+            roundeClass={"rounded-t-4xl rounded-br-4xl"}
+            textClass={"text-right"}
+          />
 
-        <section className="flex flex-row">
-          {/* <article className="bg-[#5459b8] text-left p-6 rounded-l-4xl">
-            <h1 className="text-3xl">Projecto 2</h1>
-            <p className="text-xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              tincidunt quis nisl eget egestas. Vestibulum ante ipsum primis in
-              faucibus orci luctus et ultrices posuere cubilia curae;
-            </p>
-          </article> */}
-
-          <div className="bg-[#fff4de] shadow-2xl text-5xl w-min m-auto text-[#09235a] rounded-3xl p-10">
+          <div className="bg-[#fff4de] col-span-2 shadow-2xl text-5xl w-min m-auto text-[#09235a] rounded-3xl p-10">
             Mis proyectos
           </div>
 
-          {/* <article className="bg-[#5459b8] text-left p-6 rounded-r-4xl">
-            <h1 className="text-3xl">Projecto 2</h1>
-            <p className="text-xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              tincidunt quis nisl eget egestas. Vestibulum ante ipsum primis in
-              faucibus orci luctus et ultrices posuere cubilia curae;
-            </p>
-          </article> */}
-        </section>
-
-        <section className="flex  flex-row justify-around gap-[100px] ">
-          <article className="bg-[#5459b8] shadow-[20px_10px_20px_rgba(0,0,0,0.3)] text-left p-6 rounded-b-4xl rounded-tl-4xl">
-            <h1 className="text-3xl">Projecto 1</h1>
-            <p className="text-xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              tincidunt quis nisl eget egestas. Vestibulum ante ipsum primis in
-              faucibus orci luctus et ultrices posuere cubilia curae;
-            </p>
-          </article>
-
-          <article className="bg-[#5459b8] shadow-[20px_10px_20px_rgba(0,0,0,0.3)] text-left p-6 rounded-b-4xl rounded-tr-4xl">
-            <h1 className="text-3xl">Projecto 2</h1>
-            <p className="text-xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-              tincidunt quis nisl eget egestas. Vestibulum ante ipsum primis in
-              faucibus orci luctus et ultrices posuere cubilia curae;
-            </p>
-          </article>
+          <ArticleProjects
+            projectTitle={"SuperAppTe"}
+            projectText={`Aplicación móvil diseñada para la organización y seguimiento personal de ejercicios y pesos máximos en el gimnasio.\n
+              SuperAppTe es una aplicación en la que puedes guardar los distintos ejercicios para cada grupo muscular y donde puedes hacer un seguimiento de los pesos máximos de ese ejercicio.                                       `}
+            roundeClass={"rounded-b-4xl rounded-tl-4xl"}
+          />
+          <ArticleProjects
+            projectTitle={"Proyecto 1"}
+            projectText={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam tincidunt quis nisl eget egestas. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;"
+            }
+            roundeClass={"rounded-b-4xl rounded-tr-4xl"}
+            textClass={"text-right"}
+          />
         </section>
       </main>
 

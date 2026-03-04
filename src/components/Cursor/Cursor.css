@@ -1,10 +1,18 @@
 .cursorCustom {
   width: 30px;
   height: 30px;
-  transition: width 0.15s ease, height 0.15s ease;
+  transition:
+    width 0.15s ease,
+    height 0.15s ease;
 }
 
 .cursorCustom.cursor-hover {
   width: 100px;
   height: 100px;
+}
+
+@media (hover: none) and (pointer: coarse) {
+  .cursorCustom {
+    display: none !important;
+  }
 }

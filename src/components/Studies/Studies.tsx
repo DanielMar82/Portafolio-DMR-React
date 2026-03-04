@@ -26,6 +26,10 @@ function Studies() {
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia viverra vulputate. Mauris ante purus, tempor etsollicitudin in, pulvinar quis mauris.",
     },
     {
+      subtitle: "Desarrollo móvil",
+      text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia viverra vulputate. Mauris ante purus, tempor etsollicitudin in, pulvinar quis mauris.",
+    },
+    {
       subtitle: "IA",
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia viverra vulputate. Mauris ante purus, tempor etsollicitudin in, pulvinar quis mauris.",
     },

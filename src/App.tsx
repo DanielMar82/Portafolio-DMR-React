@@ -27,6 +27,7 @@ function App() {
 
     setTimeout(() => {
       navigate(url);
+      window.scrollTo(0, 0);
       frameRef.current?.open();
     }, 1000);
   };

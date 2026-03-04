@@ -25,12 +25,19 @@ const Intro = () => {
           <img
             src="/FotoCarnet.jpg"
             alt="Foto de carnet"
-            className="w-[40%] shadow-2xl rounded-3xl object-cover "
+            className="w-[38%] shadow-2xl rounded-3xl object-cover "
           />
         </div>
-        <p className="-translate-x-15 text-left z-10 px-4 [text-shadow:10px_10px_20px_rgba(0,0,0,0.5)]">
-          Programador junior con 2 años de experiencia en el mundo del
-          desarrollo software y web, con aspiraciones a futuros aprendizajes
+        <p className="-translate-x-15 text-2xl text-left z-10 px-4 leading-10 [text-shadow:10px_10px_20px_rgba(0,0,0,0.5)]">
+          Programador junior con{" "}
+          <span className="bg-[#fff4de] text-black font-semibold px-1">
+            2 años de experiencia
+          </span>{" "}
+          en el mundo del{" "}
+          <span className="bg-[#fff4de] text-black font-semibold px-1">
+            desarrollo software y web,
+          </span>{" "}
+          con aspiraciones a futuros aprendizajes
         </p>
       </div>
     </>

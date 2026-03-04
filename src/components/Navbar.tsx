@@ -40,15 +40,15 @@ const Navbar = forwardRef<NavbarHandle, NavbarProps>(({ goTo }, ref) => {
       `}
       >
         <button onClick={() => goTo("/")}>
-          <HomeIcon className="cursor-grow size-20 text-[#000000]" />
+          <HomeIcon className="cursor-grow cursor-pointer size-20 text-[#000000]" />
         </button>
 
         <button onClick={() => goTo("/personal")}>
-          <PersonalIcon className="cursor-grow size-20 text-[#000000]" />
+          <PersonalIcon className="cursor-grow cursor-pointer size-20 text-[#000000]" />
           {/* <p>Personal</p> */}
         </button>
         <button onClick={() => goTo("/proyectos")}>
-          <ProyectosIcon className="cursor-grow size-20 text-[#000000]" />
+          <ProyectosIcon className="cursor-grow cursor-pointer size-20 text-[#000000]" />
           {/* <p>Proyectos</p> */}
         </button>
       </main>
