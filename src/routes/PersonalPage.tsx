@@ -1,9 +1,9 @@
 const PersonalPage = () => {
   return (
     <>
-      <main className="bg-fixed bg-linear-to-tr from-[#002909] to-[rgb(14,124,73)] p-20 text-center">
+      {/* TODO: Problemas con el fondo y los section */}
+      <main className="flex flex-col bg-fixed bg-linear-to-tr from-[#002909] to-[rgb(14,124,73)] p-20 pb-40 text-center">
         {/* INTRO PERSONAL */}
-
         <section className="flex flex-row relative text-left mt-[40px] mb-[70px] px-12">
           <div className="relative flex flex-col gap-7 mx-auto z-10">
             <h1 className="text-[120px] w-fit p-3 rounded-4xl bg-[#fff4de] text-[#0c2b0c] font-semibold">
@@ -84,7 +84,18 @@ const PersonalPage = () => {
         </section>
 
         <section className="mt-[500px] text-6xl" id="CineSeries">
-          <h1>Cine y series</h1>
+          <div className="flex flex-row justify-around">
+            <div className="flex flex-col">
+              <h1 className="text-7xl text-left font-bold text-[#355e24] bg-[#fdff9a] p-4 w-fit self-center rounded-3xl">
+                Cine
+              </h1>
+            </div>
+            <div className="flex flex-col">
+              <h1 className="text-7xl text-left font-bold text-[#355e24] bg-[#fdff9a] p-4 w-fit self-center rounded-3xl">
+                Series
+              </h1>
+            </div>
+          </div>
         </section>
       </main>
     </>

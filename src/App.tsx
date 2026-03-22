@@ -34,6 +34,8 @@ function App() {
 
   return (
     <>
+      {/* TODO: Resolver problema con el modo oscuro en móvil */}
+      {/* TODO: Resolver problema con el cursor en el móvil */}
       <Frame ref={frameRef} navbarRef={navbarRef} />
 
       <Navbar ref={navbarRef} goTo={goTo} />

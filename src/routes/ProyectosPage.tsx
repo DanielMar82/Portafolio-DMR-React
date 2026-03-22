@@ -1,7 +1,7 @@
 const ProyectosPage = () => {
   return (
     <>
-      <main className="bg-fixed bg-linear-to-tr from-[#290000] to-[#7c0e17] p-20 text-center">
+      <main className="flex flex-col bg-fixed bg-linear-to-tr from-[#290000] to-[#7c0e17] p-20 pb-[3000px] text-center">
         <section className="relative flex flex-col items-end text-left mt-[40px] mb-[70px] px-12">
           <div className="relative flex flex-col items-end gap-7 z-10">
             <h1 className="text-[100px] w-fit p-3 rounded-4xl bg-[#fff4de] text-[#1b0311] font-semibold">

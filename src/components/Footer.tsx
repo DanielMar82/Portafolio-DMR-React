@@ -12,7 +12,7 @@ const Footer = ({ ...props }) => {
   return (
     <>
       <main
-        className={`bg-[${bgColor}] flex flex-col gap-14 text-[#03002a] p-[50px] pb-[60px]`}
+        className={`bg-[${bgColor}] flex flex-col gap-14 text-[#03002a] p-[50px] lg:pb-[60px] pb-[170px]`}
       >
         {/* <h1>Contacto</h1> */}
         <div className="flex  flex-row gap-3 text-xl font-bold justify-around">
@@ -21,7 +21,7 @@ const Footer = ({ ...props }) => {
             to={"/daniel.mar.ruiz.28@gmail.com"}
             target="_blank"
           >
-            <EmailIcon className="size-10 text-[#000]" />
+            <EmailIcon className="lg:size-10 size-15 text-[#000]" />
           </Link>
 
           <Link
@@ -29,7 +29,7 @@ const Footer = ({ ...props }) => {
             to={"https://www.linkedin.com/in/danielmr288/"}
             target="_blank"
           >
-            <LinkedinIcon className="size-10 text-[#000]" />
+            <LinkedinIcon className="lg:size-10 size-15 text-[#000]" />
           </Link>
 
           <Link
@@ -37,7 +37,7 @@ const Footer = ({ ...props }) => {
             to={"https://github.com/DanielMar82"}
             target="_blank"
           >
-            <GithubIcon className="size-10 text-[#000]" />
+            <GithubIcon className="lg:size-10 size-15 text-[#000]" />
           </Link>
 
           <Link
@@ -46,7 +46,7 @@ const Footer = ({ ...props }) => {
             to={"/"}
             target="_blank"
           >
-            <InstagramIcon className="size-10 text-[#000]" />
+            <InstagramIcon className="lg:size-10 size-15 text-[#000]" />
           </Link>
         </div>
       </main>

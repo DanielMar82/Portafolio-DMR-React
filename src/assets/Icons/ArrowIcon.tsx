@@ -6,15 +6,15 @@ type IconProps = {
 };
 
 const ArrowIcon = ({
-  size = 30,
+  // size = 30,
   color = "currentColor",
   className = "",
   rotate = 180,
 }: IconProps) => {
   return (
     <svg
-      width={size}
-      height={size}
+      // width={size}
+      // height={size}
       viewBox="0 0 24 24"
       fill="none"
       className={className}

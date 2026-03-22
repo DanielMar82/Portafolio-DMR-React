@@ -83,15 +83,18 @@ const Frame = forwardRef<FrameHandle, FrameProps>(({ navbarRef }, ref) => {
       >
         <div
           onClick={openNavbar}
-          className="flex flex-row gap-4 text-black text-xl justify-end"
+          className="flex flex-row gap-4 text-black lg:text-xl text-5xl"
         >
+          {/* TODO: No funciona bien el giro del ArrowIcon ni el NavOpen (Este se queda en la ultima posicion establecida al cambiar de pagina) */}
           <ArrowIcon
             className={`
-              cursor-grow cursor-pointer transition-transform ease-in-out duration-[1s] text-[#000000]
+              cursor-grow cursor-pointer transition-transform ease-in-out duration-[1s] text-[#000000] size-[60px] lg:size-[30px]
               ${navOpen ? "rotate-60" : "rotate-0"}
             `}
           />
-          <p>{getPageName()}</p>
+          <p className="font-semibold lg:font-normal self-center">
+            {getPageName()}
+          </p>
         </div>
       </div>
 
@@ -105,12 +108,12 @@ const Frame = forwardRef<FrameHandle, FrameProps>(({ navbarRef }, ref) => {
     }  // puedes reutilizar la de top
   `}
       >
-        <h2 className="text-left text-black text-[10px] font-semibold">
+        <h2 className="text-left text-black lg:text-xs text-3xl font-semibold">
           © Daniel Martín Ruiz | {year}
         </h2>
         <div
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="cursor-grow cursor-pointer size-[40px] flex items-center justify-center transition-all duration-300"
+          className="cursor-grow cursor-pointer lg:size-[40px] size-[60px] flex items-center justify-center transition-all duration-300"
           style={{
             WebkitMask: `conic-gradient(#000 ${
               scrollProgress * 360 + 0.1
@@ -120,7 +123,7 @@ const Frame = forwardRef<FrameHandle, FrameProps>(({ navbarRef }, ref) => {
             }deg, transparent 0deg)`,
           }}
         >
-          <ArrowIcon className="rotate-180 text-black size-[30px]" />
+          <ArrowIcon className="rotate-180 text-black lg:size-[30px] size-[60px]" />
         </div>
       </div>
 
