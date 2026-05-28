@@ -73,6 +73,8 @@ const Frame = forwardRef<FrameHandle, FrameProps>(({ navbarRef }, ref) => {
 
   return (
     <>
+      {/* TODO: ¿HACER MODO DARK LOS MARCOS? */}
+
       {/* Marco superior */}
       <div
         className={`
@@ -88,7 +90,7 @@ const Frame = forwardRef<FrameHandle, FrameProps>(({ navbarRef }, ref) => {
           {/* TODO: No funciona bien el giro del ArrowIcon ni el NavOpen (Este se queda en la ultima posicion establecida al cambiar de pagina) */}
           <ArrowIcon
             className={`
-              cursor-grow cursor-pointer transition-transform ease-in-out duration-[1s] text-[#000000] size-[60px] lg:size-[30px]
+              cursor-grow transition-transform ease-in-out duration-[1s] text-[#000000] size-[60px] lg:size-[30px]
               ${navOpen ? "rotate-60" : "rotate-0"}
             `}
           />
@@ -111,9 +113,10 @@ const Frame = forwardRef<FrameHandle, FrameProps>(({ navbarRef }, ref) => {
         <h2 className="text-left text-black lg:text-xs text-3xl font-semibold">
           © Daniel Martín Ruiz | {year}
         </h2>
+        {/* TODO: Fallo flecha volver, aunque no aparezca la flecha se encuentra como oculta y el cursor crece */}
         <div
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="cursor-grow cursor-pointer lg:size-[40px] size-[60px] flex items-center justify-center transition-all duration-300"
+          className="cursor-grow lg:size-[40px] size-[60px] flex items-center justify-center transition-all duration-300"
           style={{
             WebkitMask: `conic-gradient(#000 ${
               scrollProgress * 360 + 0.1

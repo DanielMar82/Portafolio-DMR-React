@@ -37,7 +37,7 @@ function Studies() {
 
   return (
     <>
-      <main className="p-7 flex flex-col gap-44">
+      <main className=" flex flex-col bg-[#030029] -mx-20 px-28 pt-20 lg:pb-32 pb-[30%] gap-44 ">
         <SectionStudies
           title="Estudios cursados"
           position={true}

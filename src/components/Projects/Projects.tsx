@@ -1,10 +1,18 @@
 import ArticleProjects from "./ArticleProjects";
+import { useScrollAppear } from "../../hooks/useScrollAppear";
 
 const Projects = () => {
+  const projectsRef = useScrollAppear();
+
   return (
     <>
-      <main className="flex flex-col gap-9">
-        <section className="grid grid-cols-2 gap-x-[100px] gap-y-[50px]">
+      <main className="flex flex-col gap-9 bg-[#030029] -mx-20 px-20 py-20 ">
+        <section
+          ref={projectsRef}
+          className="scroll-appear grid grid-cols-2 gap-x-[100px] gap-y-[50px]"
+        >
+          {/* TODO: Fallo cursor, hacer click cursor se queda en grande en la otra página */}
+
           <ArticleProjects
             projectTitle={"Portfolio web"}
             projectText={`Página web donde compilo los proyectos que he ido realizando y cuento datos sobre mí como persona.\n

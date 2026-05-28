@@ -1,19 +1,6 @@
 const Intro = () => {
   return (
     <>
-      {/* INTRO OPCION 1 */}
-      {/* <div className="relative">
-        <h1 className="text-6xl">Daniel Martín Ruiz</h1>
-        <div className="bg-[url('public/FotoCarnet.jpg')] bg-amber-200 bg-cover bg-top bg-no-repeat size-[600px] mx-auto rounded-full z-10"></div>
-
-        <p className="z-10">
-          Programador junior con 2 años de experiencia en el mundo del
-          desarrollo software y web, con aspiraciones a futuros aprendizajes
-        </p>
-
-        <div className="left-[50%] shadow-2xl bg-linear-to-tr from-[#09235a] to-[#5188ff] size-[400px] rounded-full inset-0 absolute z-0" />
-      </div> */}
-
       {/* INTRO OPCION 2 */}
       {/* bg-[#09235a] */}
       {/* <div className="lg:px-[20%] px-[10%] gap-6 flex flex-col relative z-10">
@@ -46,8 +33,8 @@ const Intro = () => {
       </div> */}
 
       {/* INTRO OPCION 2 / MODO GRID */}
-      <div className="grid grid-cols-2 gap-6 lg:px-[20%] relative z-10">
-        <div className="mx-auto shadow-2xl bg-linear-to-tr from-[#09235a] to-[#5188ff] lg:w-[67%] w-[90%] h-full lg:top-[50px] top-[30px] lg:left-20 left-5 rounded-[80px] inset-0 absolute z-0" />
+      <main className=" grid grid-cols-2 gap-6 lg:px-[20%] lg:mt-0 mt-[100px] relative z-10">
+        <div className="mx-auto shadow-2xl bg-linear-to-tr from-[#09235a] to-[#5188ff] lg:w-[67%] w-[90%] h-full lg:top-[50px] top-[15px] lg:left-20 left-5 rounded-[80px] inset-0 absolute z-0" />
 
         <h1 className="lg:-translate-x-15 lg:text-left row-start-1 col-start-1 lg:col-span-1 col-span-2 w-full lg:text-9xl lg:leading-40 text-[90px] font-bold [text-shadow:10px_10px_20px_rgba(0,0,0,0.5)] z-10">
           Daniel Martín Ruiz
@@ -65,12 +52,19 @@ const Intro = () => {
           con aspiraciones a futuros aprendizajes
         </p>
 
-        <img
+        {/* <img
           src="/FotoCarnet.jpg"
           alt="Foto de carnet"
           className="lg:row-start-1 lg:col-start-2 lg:ml-8 lg:w-[80%] lg:h-full h-[80%] shadow-2xl self-center rounded-3xl object-cover z-10 col-start-2"
-        />
-      </div>
+        /> */}
+        <div className=" lg:row-start-1 lg:col-start-2 relative xl:w-[80%] lg:w-[110%] w-full lg:h-full h-[80%] aspect-3/4 self-center">
+          <img
+            src="/FotoPerfilNEW.jpeg"
+            alt="Foto de perfil"
+            className="absolute inset-0 w-full h-full object-cover rounded-3xl shadow-2xl"
+          />
+        </div>
+      </main>
     </>
   );
 };

@@ -5,8 +5,6 @@ import InstagramIcon from "../assets/Icons/InstagramIcon";
 import { LinkedinIcon } from "../assets/Icons/LinkedinIcon";
 
 const Footer = ({ ...props }) => {
-  // bg-[#fff4de] #09235a
-
   const { bgColor } = props;
 
   return (
@@ -15,9 +13,9 @@ const Footer = ({ ...props }) => {
         className={`bg-[${bgColor}] flex flex-col gap-14 text-[#03002a] p-[50px] lg:pb-[60px] pb-[170px]`}
       >
         {/* <h1>Contacto</h1> */}
-        <div className="flex  flex-row gap-3 text-xl font-bold justify-around">
+        <div className="flex flex-row gap-3 text-xl font-bold justify-around">
           <Link
-            className="cursor-grow"
+            className="cursor-grow cursor-none"
             to={"/daniel.mar.ruiz.28@gmail.com"}
             target="_blank"
           >
@@ -25,7 +23,7 @@ const Footer = ({ ...props }) => {
           </Link>
 
           <Link
-            className="cursor-grow"
+            className="cursor-grow cursor-none"
             to={"https://www.linkedin.com/in/danielmr288/"}
             target="_blank"
           >
@@ -33,7 +31,7 @@ const Footer = ({ ...props }) => {
           </Link>
 
           <Link
-            className="cursor-grow"
+            className="cursor-grow cursor-none"
             to={"https://github.com/DanielMar82"}
             target="_blank"
           >
@@ -41,7 +39,8 @@ const Footer = ({ ...props }) => {
           </Link>
 
           <Link
-            className="cursor-grow"
+            className="cursor-grow cursor-none"
+            //TODO: Cambiar enlaces footer
             // to={"https://www.instagram.com/dany82_8?igsh=MXh6NHB3bjN3ency"}
             to={"/"}
             target="_blank"
