@@ -1,12 +1,4 @@
-import { Link } from "react-router";
-import ReactIcon from "../../assets/Icons/ReactIcon";
-import TailwindIcon from "../../assets/Icons/TailwindIcon";
-import TypeScriptIcon from "../../assets/Icons/TypeScriptIcon";
-import {
-  WebIcon,
-  MobileIcon,
-  GithubIcon2,
-} from "../../assets/Icons/ProjectsIcons";
+import { WebIcon, MobileIcon } from "../../assets/Icons/ProjectsIcons";
 
 const SectionProyectosMovil = () => {
   return (

@@ -1,5 +1,4 @@
 import SectionPortfolio from "../components/ProjectsSections/SectionPortfolio";
-import SectionProyecto2 from "../components/ProjectsSections/SectionProyecto2";
 import SectionProyectosMovil from "../components/ProjectsSections/SectionProyectosMovil";
 
 const ProyectosPage = () => {
