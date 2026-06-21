@@ -46,7 +46,7 @@ const SectionDeporte = () => {
           <h1 className="scroll-appear scroll-right lg:text-7xl text-8xl text-right font-bold text-[#021b07] bg-[#fff4de] lg:p-4 p-7 w-fit self-end rounded-t-3xl rounded-br-3xl">
             Deporte
           </h1>
-          <p className="scroll-appear scroll-right text-[#021b07] font-semibold text-left lg:text-2xl text-4xl bg-[#fdff9a] p-5 rounded-4xl whitespace-pre-line">
+          <p className="scroll-appear scroll-right text-[#021b07] text-left lg:text-2xl text-4xl bg-[#fdff9a] p-5 rounded-4xl whitespace-pre-line">
             {`Amante del deporte y la actividad física.\n
             Entreno en el gimnasio para mantenerme activo, ganar fuerza y evitar una vida sedentaria.\n
               Fan de la natacion desde que empecé con tan solo 4 años. Deporte que no solo me hace moverme y quemar grandes cantidades de calorias, si no que tambien me ayuda a meditar, generar ideas y pensar en distintas cosas del día a día. `}

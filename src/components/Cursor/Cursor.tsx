@@ -1,10 +1,34 @@
 import { useEffect, useState } from "react";
+
 import "./Cursor.css";
 
+// TODO: CHECKEAR QUE EL CURSOR NO APARECE EN MOVIL
+// Componente cursor que se mueve con el cursor del ordenador
+
+const useHasHover = () => {
+  const [hasHover, setHasHover] = useState(true);
+
+  useEffect(() => {
+    const mq = window.matchMedia("(hover: hover) and (pointer: fine)");
+    setHasHover(mq.matches);
+
+    const handler = (e: MediaQueryListEvent) => setHasHover(e.matches);
+    mq.addEventListener("change", handler);
+
+    return () => mq.removeEventListener("change", handler);
+  }, []);
+
+  return hasHover;
+};
+
 const Cursor = () => {
+  const hasHover = useHasHover();
+
   const [pos, setPos] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
+    if (!hasHover) return;
+
     const cursor = document.querySelector(".cursorCustom") as HTMLElement;
 
     const move = (e: MouseEvent) => {
@@ -34,7 +58,9 @@ const Cursor = () => {
       window.removeEventListener("mouseover", handleOver);
       window.removeEventListener("mouseout", handleOut);
     };
-  }, []);
+  }, [hasHover]);
+
+  if (!hasHover) return null;
 
   return (
     <div

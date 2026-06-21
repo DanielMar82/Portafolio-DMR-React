@@ -7,7 +7,6 @@
 
   height: 100%;
   margin: 0;
-  /* padding: 100px 0 0; */
 
   color-scheme: light dark;
   color: rgb(255, 244, 222);
@@ -21,17 +20,56 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /*TODO: MARCAR ESTO UNA VEZ TERMINE cursor: none; */
+  /*TODO: TERMINADO cursor: none; */
 }
 
 body {
-  /* background-color: #09235a; */
   background-color: #fff4de;
   margin: 0;
-  /* padding: 40px; */
-  /* height: 100%; */
 }
 
+/* FUENTES */
+/* AFACAD */
+@font-face {
+  font-family: "Afacad";
+  src: url(/fuentes/Afacad/Afacad-VariableFont_wght.ttf);
+  font-weight: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+  font-style: normal;
+}
+
+/* TIRRA */
+@font-face {
+  font-family: "Tirra";
+  src: url(/fuentes/Tirra/Tirra-Regular.ttf);
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tirra";
+  src: url(/fuentes/Tirra/Tirra-SemiBold.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tirra";
+  src: url(/fuentes/Tirra/Tirra-Bold.ttf);
+  font-weight: 800;
+  font-style: normal;
+}
+
+h1 {
+  font-family: "Afacad";
+}
+h2 {
+  font-family: "Afacad";
+}
+p {
+  font-family: "Tirra";
+}
+
+/* Estilos Scroll-Appear */
 .scroll-appear {
   opacity: 0;
   transform: var(--initial-transform, translateY(50px));
@@ -52,27 +90,7 @@ body {
   --initial-transform: translateX(50px);
 }
 
-/* h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-} */
-
-/* h2 {
-  line-height: 1;
-  margin: 0;
+/* Estilos Span */
+.spanhighlight {
+  @apply bg-[#fff4de] text-[#030029] font-bold px-1;
 }
-
-p {
-  margin: 0;
-  font-size: 20px;
-} */
-
-/* .PFPImage {
-  margin: 20px auto 30px;
-  width: 400px;
-  height: 400px;
-  background-image: url("/IconMetal.png");
-  background-size: cover;
-  background-position: center;
-  border-radius: 100%;
-} */

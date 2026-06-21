@@ -9,8 +9,6 @@ const PlayIcon = ({ color = "currentColor", className = "" }: IconProps) => {
   return (
     <svg
       viewBox="-0.5 0 7 7"
-      // width={size}
-      // height={size}
       fill={color}
       xmlns="http://www.w3.org/2000/svg"
       className={className}

@@ -15,7 +15,7 @@ const TailwindIcon = ({
       className={className}
       width={size}
       height={size}
-      viewBox="0 0 32 32"
+      viewBox="2 2 28 28"
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
     >

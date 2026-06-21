@@ -7,8 +7,11 @@ import {
 } from "react";
 import { useLocation } from "react-router";
 
-import ArrowIcon from "../../assets/Icons/ArrowIcon";
 import "./Frame.css";
+
+import ArrowIcon from "../../assets/Icons/ArrowIcon";
+
+// Componente Frame (Marcos) que rodea las páginas
 
 type FrameProps = {
   navbarRef: RefObject<any>;
@@ -38,7 +41,7 @@ const Frame = forwardRef<FrameHandle, FrameProps>(({ navbarRef }, ref) => {
       case "/proyectos":
         return "PROYECTOS";
       default:
-        return "ERROR";
+        return "PÁGINA NO ENCONTRADA";
     }
   };
 
@@ -53,6 +56,7 @@ const Frame = forwardRef<FrameHandle, FrameProps>(({ navbarRef }, ref) => {
     },
     close() {
       setIsOpen(false);
+      setNavOpen(false);
     },
     toggle() {
       setIsOpen((prev) => !prev);
@@ -67,14 +71,14 @@ const Frame = forwardRef<FrameHandle, FrameProps>(({ navbarRef }, ref) => {
       setScrollProgress(progress);
     };
 
+    setNavOpen(false);
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [location.pathname]);
 
   return (
     <>
-      {/* TODO: ¿HACER MODO DARK LOS MARCOS? */}
-
       {/* Marco superior */}
       <div
         className={`
@@ -87,7 +91,6 @@ const Frame = forwardRef<FrameHandle, FrameProps>(({ navbarRef }, ref) => {
           onClick={openNavbar}
           className="flex flex-row gap-4 text-black lg:text-xl text-5xl"
         >
-          {/* TODO: No funciona bien el giro del ArrowIcon ni el NavOpen (Este se queda en la ultima posicion establecida al cambiar de pagina) */}
           <ArrowIcon
             className={`
               cursor-grow transition-transform ease-in-out duration-[1s] text-[#000000] size-[60px] lg:size-[30px]
@@ -113,10 +116,9 @@ const Frame = forwardRef<FrameHandle, FrameProps>(({ navbarRef }, ref) => {
         <h2 className="text-left text-black lg:text-xs text-3xl font-semibold">
           © Daniel Martín Ruiz | {year}
         </h2>
-        {/* TODO: Fallo flecha volver, aunque no aparezca la flecha se encuentra como oculta y el cursor crece */}
         <div
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className="cursor-grow lg:size-[40px] size-[60px] flex items-center justify-center transition-all duration-300"
+          className={`cursor-grow lg:size-[40px] size-[60px] flex items-center justify-center transition-all duration-300 ${scrollProgress === 0 ? "pointer-events-none opacity-0" : "pointer-events-auto opacity-100"}`}
           style={{
             WebkitMask: `conic-gradient(#000 ${
               scrollProgress * 360 + 0.1

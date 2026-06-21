@@ -1,5 +1,7 @@
 import { useEffect, useRef } from "react";
 
+// Hook que hace que los componentes aparezcan mediante una animacion estilo fade
+
 export const useScrollAppear = () => {
   const containerRef = useRef<HTMLDivElement | null>(null);
 

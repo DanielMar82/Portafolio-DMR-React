@@ -1,54 +1,100 @@
-# React + TypeScript + Vite
+# 🖥️ Portfolio Personal - Daniel Martín Ruiz - Desarrollador Web y Software 🌐
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Te presento mi portfolio Web.
+Un proyecto más que necesario para cualquier desarrollador/programador, un sitio donde mostrar el trabajo y los proyectos realizados.
 
-Currently, two official plugins are available:
+Proyecto construido con **React + TypeScript + Vite**, combinando estructura modular con un diseño cuidado y responsive, animaciones personalizadas y una experiencia audiovisual pensada para destacar en el mundo de la programación.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologías principales
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **React + TypeScript** — base del proyecto, componentes tipados y escalables
+- **Vite** — desarrollo ultrarrápido y build optimizada
+- **Tailwind CSS** — estilos consistentes, diseño responsive y utilidades personalizadas
+- **CSS Animations + Transitions** — animaciones suaves en navegación, scroll y UI
+- **Custom Hooks** — lógica reutilizable para navegación, animaciones y estado
+- **SVG Icons personalizados** — iconos propios optimizados como componentes React
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 🎨 Características destacadas
+
+### ✦ Navegación animada con Frame
+
+El proyecto incluye un sistema de navegación único basado en un componente `Frame` que crea una transición visual envolvente entre páginas.
+
+### ✦ Navbar dinámico
+
+Un menú superior con animación de despliegue, icono rotatorio y cierre automático al navegar o retroceder.
+
+### ✦ Diseño responsive y pixel-perfect
+
+Cada sección está pensada para adaptarse a cualquier dispositivo sin perder estética ni legibilidad.
+
+### ✦ Iconos SVG como componentes
+
+Iconos creados y optimizados como componentes independientes para facilitar animaciones y reutilización.
+
+### ✦ Código modular y mantenible
+
+Estructura clara, componentes pequeños, hooks reutilizables y separación lógica/visual bien definida.
+
+---
+
+## 📁 Estructura del proyecto
+
+public/
+├── audios/
+├── fuentes/
+├── landingImages/
+├── personalImages/
+├── projectsImages/
+└── Archivos varios
+src/
+├── assets/
+│ └── Icons/ # Iconos SVG como componentes
+├── components/
+│ ├── Frame/ # Sistema de navegación animada
+│ ├── Navbar/ # Menú superior
+│ └── ... # Otros componentes
+├── hooks/
+│ └── useGoTo.ts # Hook de navegación animada
+│ └── ... # Otros Hooks
+└── routes/
+│ ├── InicioPage.tsx
+│ ├── PersonalPage.tsx
+│ ├── ProyectosPage.tsx
+│ └── NotFoundPage.tsx
+
+## 🧩 Instalación y uso
+
+```bash
+# Clonar el repositorio
+git clone https://github.com/tu-usuario/tu-repo.git
+
+# Instalar dependencias
+npm install
+
+# Iniciar el servidor de desarrollo
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 📞 Contacto
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+<!--TODO: PONER DOMINIO EN EL README - Portfolio: [] -->
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- GitHub: [https://github.com/DanielMar82](https://github.com/DanielMar82)
+- Linkedin: [https://www.linkedin.com/in/danielmr288/](https://www.linkedin.com/in/danielmr288/)
+- Email: Daniel.mar.ruiz.28@gmail.com
+
+## 📝 Licencia
+
+Este proyecto está bajo la licencia MIT.
+Eres libre de usar el código como referencia, pero el diseño, contenido y marca personal pertenecen a su autor.
+
+## 🔒 Derechos sobre imágenes y contenido visual
+
+El código de este proyecto está bajo licencia MIT, pero **todas las imágenes, fotografías y contenido visual propio pertenecen exclusivamente a Daniel Martín Ruiz**.
+
+No está permitido copiar, reutilizar o distribuir estas imágenes sin autorización.

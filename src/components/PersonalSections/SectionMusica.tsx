@@ -45,9 +45,9 @@ const SectionMusica = () => {
           <h1 className="bg-[#fff4de] lg:text-7xl text-8xl text-left font-bold text-[#021b07] lg:p-4 p-7 w-fit rounded-t-3xl rounded-bl-3xl">
             Música
           </h1>
-          <p className="bg-[#fdff9a] lg:w-full text-[#021b07] text-left lg:text-2xl text-4xl font-semibold p-5 rounded-4xl whitespace-pre-line">
+          <p className="bg-[#fdff9a] lg:w-full text-[#021b07] text-left lg:text-2xl text-4xl p-5 rounded-4xl whitespace-pre-line">
             {`No hay mucho que añadir ¿A quién no le gusta la música?\n
-              Algunos de mis tipos musical favoritos se encuentran el rap español e inglés, el pop/rock antiguo de los 80 y 90, y sobretodo las típicas canciones españolas.\n
+              Entre algunos de mis tipos musicales favoritos se encuentran el rap español e inglés, el pop/rock antiguo de los 80 y 90, y sobretodo las canciones típicas españolas.\n
               Y aquí dejo algunas de las canciones que más me gustan:`}
           </p>
         </div>

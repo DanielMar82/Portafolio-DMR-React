@@ -6,7 +6,6 @@ type IconProps = {
 };
 
 const DownloadIcon = ({
-  // size = 30,
   color = "currentColor",
   className = "",
 }: IconProps) => {

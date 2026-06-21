@@ -1,6 +1,8 @@
 import PauseIcon from "../../assets/Icons/PauseIcon";
 import PlayIcon from "../../assets/Icons/PlayIcon";
 
+// Componente card para escuchar la música
+
 type MusicaAudioCardProps = {
   image: string;
   audio: string;

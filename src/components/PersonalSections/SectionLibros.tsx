@@ -5,7 +5,6 @@ const SectionLibros = () => {
 
   return (
     <>
-      {/* TODO: ARREGLAR EN MOVIL, ARREGLAR RESPONSIVE 1230px */}
       {/* APARTADO LIBROS */}
       <section
         ref={sectionRef}
@@ -20,7 +19,7 @@ const SectionLibros = () => {
               </p>
             </div>
 
-            <div className=" group relative bg-[url('/personalImages/libros/ImgLibros.jpg')] bg-cover 2xl:w-[450px] xl:w-[400px] lg:w-[370px] w-[350px] h-[250px] p-2 rounded-3xl shadow-2xl self-end lg:-mr-0 -mr-6 overflow-hidden after:absolute after:inset-0 after:bg-black/0 after:transition-all after:duration-400 z-10 text-center content-center after:z-10 hover:after:bg-black/80">
+            <div className="scroll-appear scroll-left group relative bg-[url('/personalImages/libros/ImgLibros.jpg')] bg-cover 2xl:w-[450px] xl:w-[400px] lg:w-[370px] w-[320px] h-[250px] p-2 rounded-3xl shadow-2xl self-end lg:-mr-0 -mr-6 overflow-hidden after:absolute after:inset-0 after:bg-black/0 after:transition-all after:duration-400 z-10 text-center content-center after:z-10 hover:after:bg-black/80">
               <p className="relative z-20 opacity-0 group-hover:opacity-100 transition-all duration-400 text-white font-semibold">
                 "No es analfabeto aquel que no sabe leer, sino aquel que
                 sabiendo leer, no lee." - Miguel de Unamuno
@@ -40,7 +39,7 @@ const SectionLibros = () => {
             <h1 className="bg-[#fff4de] lg:text-7xl text-8xl text-left font-bold text-[#021b07] lg:p-4 p-7 w-fit self-center rounded-t-3xl">
               Libros
             </h1>
-            <p className="bg-[#fdff9a] lg:w-[80%] mx-auto text-[#021b07] text-left lg:text-2xl text-4xl font-semibold p-5 rounded-4xl whitespace-pre-line">
+            <p className="bg-[#fdff9a] lg:w-[80%] mx-auto text-[#021b07] text-left lg:text-2xl text-4xl p-5 rounded-4xl whitespace-pre-line">
               {`Me encanta leer historias que te hacen pensar y otras que simplemente te enganchan desde la primera página.\n
                Disfruto tanto de sagas como Los Juegos del Hambre o Juego de Tronos, que te meten de lleno en mundos enormes y llenos de personajes, como de libros más reflexivos y simbólicos como La metamorfosis o El Principito.\n
               Y, por supuesto, el manga ocupa un lugar especial para mí: obras como Berserk, Monster o Dragon Ball me han marcado mi forma de ver las historias, los personajes y la narrativa.`}
@@ -55,7 +54,7 @@ const SectionLibros = () => {
               </p>
             </div>
 
-            <div className="scroll-appear scroll-right group relative self-start bg-[url('/personalImages/libros/ImgManga1.jpg')] bg-cover 2xl:w-[450px] xl:w-[400px] lg:w-[370px] w-[350px] h-[250px] p-2 rounded-3xl shadow-2xl self-end lg:-ml-0 -ml-6 overflow-hidden after:absolute after:inset-0 after:bg-black/0 after:transition-all after:duration-400 z-10 text-center content-center after:z-10 hover:after:bg-black/80">
+            <div className="scroll-appear scroll-right group relative self-start bg-[url('/personalImages/libros/ImgManga1.jpg')] bg-cover 2xl:w-[450px] xl:w-[400px] lg:w-[370px] w-[320px] h-[250px] p-2 rounded-3xl shadow-2xl self-end lg:-ml-0 -ml-6 overflow-hidden after:absolute after:inset-0 after:bg-black/0 after:transition-all after:duration-400 z-10 text-center content-center after:z-10 hover:after:bg-black/80">
               <p className="relative z-20 opacity-0 group-hover:opacity-100 transition-all duration-400 text-white font-semibold">
                 "El odio es un lugar al que va el hombre que no soporta la
                 tristeza." - Godo

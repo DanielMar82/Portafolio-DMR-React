@@ -1,8 +1,11 @@
-import { forwardRef, useImperativeHandle, useState } from "react";
+import { forwardRef, useEffect, useImperativeHandle, useState } from "react";
+import { useLocation } from "react-router";
 
 import HomeIcon from "../assets/Icons/HomeIcon";
 import PersonalIcon from "../assets/Icons/PersonalIcon";
 import ProyectosIcon from "../assets/Icons/ProyectosIcon";
+
+// Componente Navbar que aparece arriba de la página
 
 export type NavbarHandle = {
   toggle: () => void;
@@ -29,6 +32,12 @@ const Navbar = forwardRef<NavbarHandle, NavbarProps>(({ goTo }, ref) => {
     },
   }));
 
+  const location = useLocation();
+
+  useEffect(() => {
+    setOpen(false);
+  }, [location.pathname]);
+
   return (
     <>
       <main
@@ -40,16 +49,15 @@ const Navbar = forwardRef<NavbarHandle, NavbarProps>(({ goTo }, ref) => {
       `}
       >
         <button onClick={() => goTo("/")}>
-          <HomeIcon className="cursor-grow cursor-none lg:size-20 size-40 text-[#000000]" />
+          <HomeIcon className="cursor-grow cursor-none lg:size-20 size-33 text-[#000000]" />
         </button>
 
         <button onClick={() => goTo("/personal")}>
-          <PersonalIcon className="cursor-grow cursor-none lg:size-20 size-40 text-[#000000]" />
-          {/* <p>Personal</p> */}
+          <PersonalIcon className="cursor-grow cursor-none lg:size-20 size-33 text-[#000000]" />
         </button>
+
         <button onClick={() => goTo("/proyectos")}>
-          <ProyectosIcon className="cursor-grow cursor-none lg:size-20 size-40 text-[#000000]" />
-          {/* <p>Proyectos</p> */}
+          <ProyectosIcon className="cursor-grow cursor-none lg:size-20 size-33 text-[#000000]" />
         </button>
       </main>
     </>

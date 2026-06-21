@@ -4,6 +4,7 @@ export default {
   theme: {
     extend: {
       keyframes: {
+        // KeyFrames para las animaciones de apertura y cierre de los frame
         frameTop: {
           "0%": { height: "100vh" },
           "100%": { height: "40px" },

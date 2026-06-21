@@ -1,9 +1,8 @@
 import { Link } from "react-router";
-import {
-  WebIcon,
-  MobileIcon,
-  GithubIcon2,
-} from "../../assets/Icons/ProjectsIcons";
+
+import WebIcon from "../../assets/Icons/WebIcon";
+import MobileIcon from "../../assets/Icons/MobileIcon";
+import GithubCircleIcon from "../../assets/Icons/GithubCircleIcon";
 
 const SectionProyecto2 = () => {
   return (
@@ -19,7 +18,7 @@ const SectionProyecto2 = () => {
               to={"https://github.com/DanielMar82/Portafolio-DMR-React"}
               target="_blank"
             >
-              <GithubIcon2 className="lg:size-11 size-20 text-[#ffffff] " />
+              <GithubCircleIcon className="lg:size-11 size-20 text-[#ffffff] " />
             </Link>
           </div>
           <p className="bg-[#500c32] lg:w-[80%] w-full lg:text-2xl text-4xl p-5 rounded-3xl text-[#fff4de] whitespace-pre-line">

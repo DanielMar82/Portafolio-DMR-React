@@ -1,10 +1,10 @@
 import SadFaceIcon from "../assets/Icons/SadFaceIcon";
 
+// Página ERROR
+
 const NotFoundPage = () => {
   return (
     <>
-      {/* TODO: ¿?Meterle el fondo con texto: ERROR */}
-
       <main className="flex bg-fixed bg-linear-to-tr from-[#461208] to-[rgb(199,53,24)] p-20 text-center min-h-screen items-center justify-center">
         <div className="relative flex flex-col lg:gap-9 gap-[140px] justify-around shadow-2xl bg-linear-to-tr from-[#46170d] to-[rgb(209,48,16)] bg-cover bg-center lg:py-[60px] py-[90px] px-[10%] mx-[20%] rounded-tl-[100px] rounded-br-[100px] text-center lg:my-0 h-fit">
           <div className="absolute inset-0 bg-black/60 rounded-tl-[100px] rounded-br-[100px] z-0"></div>

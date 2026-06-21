@@ -1,24 +1,24 @@
-import DownloadCv from "../components/DownloadCv";
-import Intro from "../components/Intro";
-import Projects from "../components/Projects/Projects";
-import Studies from "../components/Studies/Studies";
-const InicioPage = () => {
-  // #020018
-  // bg-linear-to-tl from-[#030029] to-[#160e7c]
+import DownloadCv from "../components/LandingSections/DownloadCv";
+import IntroLanding from "../components/LandingSections/IntroLanding";
+import Trayectoria from "../components/LandingSections/Trayectoria/Trayectoria";
+import Projects from "../components/LandingSections/Projects/Projects";
+import Studies from "../components/LandingSections/Studies/Studies";
 
+// Página Landing/Inicial
+
+const InicioPage = ({ goTo }) => {
   return (
     <>
-      <main className="flex flex-col px-20 gap-[300px] bg-fixed bg-linear-to-tr from-[#030029] to-[#160e7c] text-center  lg:pt-[100px] pt-[250px] pb-[150px]">
-        <Intro />
+      <main className="flex flex-col px-20 gap-[300px] bg-fixed bg-linear-to-tr from-[#030029] to-[#160e7c] text-center 2xl:pt-[80px] lg:pt-[60px] pt-[180px] pb-[150px]">
+        <IntroLanding />
 
         <Studies />
 
-        <Projects />
+        <Trayectoria />
+
+        <Projects goTo={goTo} />
 
         <DownloadCv />
-
-        {/* TODO: Trayectoria profesional??? Aqui??? */}
-        {/* Camino de estudios, trabajos sobre programación, opinión del mundo de la programacion y la IA, lenguages/frameworks favoritos */}
       </main>
     </>
   );
