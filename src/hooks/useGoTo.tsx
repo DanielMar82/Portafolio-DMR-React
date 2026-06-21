@@ -6,6 +6,8 @@ import type { FrameHandle } from "../components/Frame/Frame";
 
 // Hook para realizar cambio entre página con la animación de los Frame
 
+export type GoToFn = (url: string, scrollTop?: boolean) => void;
+
 export function useGoTo(
   navbarRef: RefObject<NavbarHandle | null>,
   frameRef: RefObject<FrameHandle | null>,

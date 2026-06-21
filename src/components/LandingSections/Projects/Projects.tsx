@@ -1,8 +1,13 @@
 import { useScrollAppear } from "../../../hooks/useScrollAppear";
+import type { GoToFn } from "../../../hooks/useGoTo";
 
 import ArticleProjects from "./ArticleProjects";
 
-const Projects = ({ goTo }) => {
+type ProjectsProps = {
+  goTo: GoToFn;
+};
+
+const Projects = ({ goTo }: ProjectsProps) => {
   const projectsRef = useScrollAppear();
 
   return (
