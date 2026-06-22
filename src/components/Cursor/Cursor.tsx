@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 
 import "./Cursor.css";
 
-// TODO: CHECKEAR QUE EL CURSOR NO APARECE EN MOVIL
 // Componente cursor que se mueve con el cursor del ordenador
 
 const useHasHover = () => {

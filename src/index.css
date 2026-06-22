@@ -1,102 +1,103 @@
 @import "tailwindcss";
+@media (prefers-color-scheme: dark) {
+  #root {
+    font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
 
-#root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+    height: 100%;
+    margin: 0;
 
-  height: 100%;
-  margin: 0;
+    color-scheme: light !important;
+    color: rgb(255, 244, 222);
+    background-color: #fff4de;
 
-  color-scheme: dark !important;
-  color: rgb(255, 244, 222);
-  background-color: #fff4de;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: none;
+  }
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  /*TODO: TERMINADO cursor: none; */
-}
+  html {
+    color-scheme: light !important;
+    background-color: #fff4de;
+  }
 
-html {
-  color-scheme: dark !important;
-  background-color: #fff4de;
-}
+  body {
+    color-scheme: light !important;
+    background-color: #fff4de;
+    margin: 0;
+  }
 
-body {
-  color-scheme: dark !important;
-  background-color: #fff4de;
-  margin: 0;
-}
+  /* FUENTES */
+  /* AFACAD */
+  @font-face {
+    font-family: "Afacad";
+    src: url(/fuentes/Afacad/Afacad-VariableFont_wght.ttf);
+    font-weight: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+    font-style: normal;
+  }
 
-/* FUENTES */
-/* AFACAD */
-@font-face {
-  font-family: "Afacad";
-  src: url(/fuentes/Afacad/Afacad-VariableFont_wght.ttf);
-  font-weight: 100, 200, 300, 400, 500, 600, 700, 800, 900;
-  font-style: normal;
-}
+  /* TIRRA */
+  @font-face {
+    font-family: "Tirra";
+    src: url(/fuentes/Tirra/Tirra-Regular.ttf);
+    font-weight: 200;
+    font-style: normal;
+  }
 
-/* TIRRA */
-@font-face {
-  font-family: "Tirra";
-  src: url(/fuentes/Tirra/Tirra-Regular.ttf);
-  font-weight: 200;
-  font-style: normal;
-}
+  @font-face {
+    font-family: "Tirra";
+    src: url(/fuentes/Tirra/Tirra-SemiBold.ttf);
+    font-weight: 600;
+    font-style: normal;
+  }
 
-@font-face {
-  font-family: "Tirra";
-  src: url(/fuentes/Tirra/Tirra-SemiBold.ttf);
-  font-weight: 600;
-  font-style: normal;
-}
+  @font-face {
+    font-family: "Tirra";
+    src: url(/fuentes/Tirra/Tirra-Bold.ttf);
+    font-weight: 800;
+    font-style: normal;
+  }
 
-@font-face {
-  font-family: "Tirra";
-  src: url(/fuentes/Tirra/Tirra-Bold.ttf);
-  font-weight: 800;
-  font-style: normal;
-}
+  h1 {
+    font-family: "Afacad";
+  }
+  h2 {
+    font-family: "Afacad";
+  }
+  p {
+    font-family: "Tirra";
+  }
 
-h1 {
-  font-family: "Afacad";
-}
-h2 {
-  font-family: "Afacad";
-}
-p {
-  font-family: "Tirra";
-}
+  /* Estilos Scroll-Appear */
+  .scroll-appear {
+    opacity: 0;
+    transform: var(--initial-transform, translateY(50px));
+    transition:
+      opacity 1s ease-out,
+      transform 1s ease-out;
+  }
 
-/* Estilos Scroll-Appear */
-.scroll-appear {
-  opacity: 0;
-  transform: var(--initial-transform, translateY(50px));
-  transition:
-    opacity 1s ease-out,
-    transform 1s ease-out;
-}
+  .scroll-appear.visible {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 
-.scroll-appear.visible {
-  opacity: 1;
-  transform: translate(0, 0);
-}
+  .scroll-left {
+    --initial-transform: translateX(-50px);
+  }
+  .scroll-right {
+    --initial-transform: translateX(50px);
+  }
 
-.scroll-left {
-  --initial-transform: translateX(-50px);
-}
-.scroll-right {
-  --initial-transform: translateX(50px);
-}
-
-/* Estilos Span */
-.spanhighlight {
-  @apply bg-[#fff4de] text-[#030029] font-bold px-1;
+  /* Estilos Span */
+  .spanhighlight {
+    @apply bg-[#fff4de] text-[#030029] font-bold px-1;
+  }
 }
