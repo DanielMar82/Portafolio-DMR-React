@@ -23,7 +23,12 @@
   /*TODO: TERMINADO cursor: none; */
 }
 
+html {
+  color-scheme: light only;
+}
+
 body {
+  color-scheme: light;
   background-color: #fff4de;
   margin: 0;
 }

@@ -34,7 +34,7 @@ const DownloadCv = () => {
             Descargar CV
           </span>
 
-          <DownloadIcon className="lg:size-15 size-20 text-white transition-all duration-400 ease-in-out transform lg:group-hover:-translate-x-[170%] group-hover:-translate-x-[230%]" />
+          <DownloadIcon className="lg:size-15 size-20 text-white transition-all duration-400 ease-in-out transform lg:group-hover:-translate-x-[170%] group-hover:-translate-x-[200%]" />
         </button>
       </main>
     </>
