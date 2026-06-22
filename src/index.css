@@ -29,7 +29,8 @@ html {
 
 body {
   color-scheme: light;
-  background-color: #fff4de;
+  background: #ff0000 !important;
+  /* background-color: #fff4de; */
   margin: 0;
 }
 
