@@ -8,7 +8,7 @@
   height: 100%;
   margin: 0;
 
-  color-scheme: light;
+  color-scheme: light !important;
   color: rgb(255, 244, 222);
   background-color: #fff4de;
 
@@ -24,13 +24,12 @@
 }
 
 html {
-  color-scheme: light only;
+  color-scheme: light !important;
 }
 
 body {
-  color-scheme: light;
-  background: #ff0000 !important;
-  /* background-color: #fff4de; */
+  color-scheme: light !important;
+  background-color: #fff4de;
   margin: 0;
 }
 
