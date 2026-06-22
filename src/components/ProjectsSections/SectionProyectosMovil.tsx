@@ -29,7 +29,7 @@ const SectionProyectosMovil = () => {
 
         <div className="scroll-appear flex lg:flex-row flex-col lg:gap-0 gap-8 justify-between">
           <p className="bg-[#500c32] w-full lg:text-2xl text-4xl p-5 rounded-3xl text-[#fff4de] whitespace-pre-line">
-            {`SuperAppTe y CompletAppMe son dos aplicaciones móviles que en proceso de desarrollo para Android con React Native, Expo y JavaScript. 
+            {`SuperAppTe y CompletAppMe son dos aplicaciones móviles en proceso de desarrollo para Android con React Native, Expo y JavaScript. 
             Aunque cada una tiene su propio propósito, las dos nacen de la misma idea: crear herramientas útiles para mi día a día, hechas a mi medida y pensadas para organizar mejor mis rutinas y mis aficiones. 
             Son proyectos personales, prácticos y en constante evolución, que voy ampliando según mis necesidades y las ideas que van surgiendo.\n
             SuperAppTe es una app para llevar un control rápido y ordenado de mis entrenamientos: ejercicios por grupo muscular, pesos y progreso, todo de forma sencilla y accesible.\n
