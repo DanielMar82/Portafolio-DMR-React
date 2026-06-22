@@ -44,6 +44,7 @@ Estructura clara, componentes pequeños, hooks reutilizables y separación lógi
 
 ## 📁 Estructura del proyecto
 
+```
 public/
 ├── audios/
 ├── fuentes/
@@ -66,6 +67,7 @@ src/
 │ ├── PersonalPage.tsx
 │ ├── ProyectosPage.tsx
 │ └── NotFoundPage.tsx
+```
 
 ## 🧩 Instalación y uso
 

@@ -8,9 +8,9 @@
   height: 100%;
   margin: 0;
 
-  color-scheme: light dark;
+  color-scheme: light;
   color: rgb(255, 244, 222);
-  background-color: #05112c;
+  background-color: #fff4de;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
