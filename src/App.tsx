@@ -24,6 +24,18 @@ function App() {
   const goTo = useGoTo(navbarRef, frameRef);
 
   useEffect(() => {
+    // Detectar samsung browser
+    const userAgent = navigator.userAgent.toLowerCase();
+    const isSamsungBrowser =
+      userAgent.includes("samsungbrowser") ||
+      (userAgent.includes("samsung") && userAgent.includes("mobile"));
+
+    if (isSamsungBrowser) {
+      alert(
+        "Estás usando el navegador de Samsung, para una mejor experiencia desactive el modo oscuro del navegador.",
+      );
+    }
+
     if ("scrollRestoration" in window.history) {
       window.history.scrollRestoration = "manual";
     }
