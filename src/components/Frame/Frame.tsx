@@ -82,7 +82,7 @@ const Frame = forwardRef<FrameHandle, FrameProps>(({ navbarRef }, ref) => {
       {/* Marco superior */}
       <div
         className={`
-    fixed top-0 left-0 w-full z-50 flex bg-[${color}]
+    fixed top-0 left-0 w-full z-50 flex bg-[${color}] dark:bg-[${color}]
     text-left px-[50px] items-center
     ${isOpen ? "frame-top-open" : "frame-top-close"}
   `}
@@ -106,7 +106,7 @@ const Frame = forwardRef<FrameHandle, FrameProps>(({ navbarRef }, ref) => {
       {/* Marco inferior */}
       <div
         className={`
-    fixed bottom-0 left-0 w-full z-50 flex bg-[${color}]
+    fixed bottom-0 left-0 w-full z-50 flex bg-[${color}] dark:bg-[${color}]
     px-10 items-center justify-between
     ${
       isOpen ? "frame-top-open" : "frame-top-close"
@@ -135,7 +135,7 @@ const Frame = forwardRef<FrameHandle, FrameProps>(({ navbarRef }, ref) => {
       {/* Marco izquierdo */}
       <div
         className={`
-    fixed top-0 left-0 h-full z-50 bg-[${color}]
+    fixed top-0 left-0 h-full z-50 bg-[${color}] dark:bg-[${color}]
     ${isOpen ? "frame-side-open" : "frame-side-close"}
   `}
       />
@@ -143,7 +143,7 @@ const Frame = forwardRef<FrameHandle, FrameProps>(({ navbarRef }, ref) => {
       {/* Marco derecho */}
       <div
         className={`
-    fixed top-0 right-0 h-full z-50 bg-[${color}]
+    fixed top-0 right-0 h-full z-50 bg-[${color}] dark:bg-[${color}]
     ${isOpen ? "frame-side-open" : "frame-side-close"}
   `}
       />
