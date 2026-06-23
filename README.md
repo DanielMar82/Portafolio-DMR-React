@@ -84,7 +84,7 @@ npm run dev
 
 ## 📞 Contacto
 
-- Portfolio Web: [htttps://danielmartinruiz.dev](htttps://danielmartinruiz.dev)
+- Portfolio Web: [htttps://danielmartinruiz.dev](https://danielmartinruiz.dev)
 - GitHub: [https://github.com/DanielMar82](https://github.com/DanielMar82)
 - Linkedin: [https://www.linkedin.com/in/danielmr288/](https://www.linkedin.com/in/danielmr288/)
 - Email: Daniel.mar.ruiz.28@gmail.com
