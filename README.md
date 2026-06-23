@@ -63,17 +63,17 @@ src/
 │ └── useGoTo.ts # Hook de navegación animada
 │ └── ... # Otros Hooks
 └── routes/
-│ ├── InicioPage.tsx
-│ ├── PersonalPage.tsx
-│ ├── ProyectosPage.tsx
-│ └── NotFoundPage.tsx
+  ├── InicioPage.tsx
+  ├── PersonalPage.tsx
+  ├── ProyectosPage.tsx
+  └── NotFoundPage.tsx
 ```
 
 ## 🧩 Instalación y uso
 
 ```bash
 # Clonar el repositorio
-git clone https://github.com/tu-usuario/tu-repo.git
+git clone https://github.com/DanielMar82/Portafolio-DMR-React.git
 
 # Instalar dependencias
 npm install
@@ -84,8 +84,7 @@ npm run dev
 
 ## 📞 Contacto
 
-<!--TODO: PONER DOMINIO EN EL README - Portfolio: [] -->
-
+- Portfolio Web: [htttps://danielmartinruiz.dev](htttps://danielmartinruiz.dev)
 - GitHub: [https://github.com/DanielMar82](https://github.com/DanielMar82)
 - Linkedin: [https://www.linkedin.com/in/danielmr288/](https://www.linkedin.com/in/danielmr288/)
 - Email: Daniel.mar.ruiz.28@gmail.com

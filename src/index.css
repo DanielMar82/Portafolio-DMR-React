@@ -34,6 +34,43 @@ body {
   margin: 0;
 }
 
+/* Estilos Scroll-Appear */
+.scroll-appear {
+  opacity: 0;
+  transform: var(--initial-transform, translateY(50px));
+  transition:
+    opacity 1s ease-out,
+    transform 1s ease-out;
+}
+
+.scroll-appear.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.scroll-left {
+  --initial-transform: translateX(-50px);
+}
+.scroll-right {
+  --initial-transform: translateX(50px);
+}
+
+/* Estilos Span */
+.spanhighlight {
+  @apply bg-[#fff4de] text-[#030029] font-bold px-1;
+}
+
+/* Estilos de selección de texto */
+::selection {
+  background: #030029;
+  color: #fff4de;
+}
+
+::-moz-selection {
+  background: #030029;
+  color: #fff4de;
+}
+
 /* FUENTES */
 /* AFACAD */
 @font-face {
@@ -73,30 +110,4 @@ h2 {
 }
 p {
   font-family: "Tirra";
-}
-
-/* Estilos Scroll-Appear */
-.scroll-appear {
-  opacity: 0;
-  transform: var(--initial-transform, translateY(50px));
-  transition:
-    opacity 1s ease-out,
-    transform 1s ease-out;
-}
-
-.scroll-appear.visible {
-  opacity: 1;
-  transform: translate(0, 0);
-}
-
-.scroll-left {
-  --initial-transform: translateX(-50px);
-}
-.scroll-right {
-  --initial-transform: translateX(50px);
-}
-
-/* Estilos Span */
-.spanhighlight {
-  @apply bg-[#fff4de] text-[#030029] font-bold px-1;
 }

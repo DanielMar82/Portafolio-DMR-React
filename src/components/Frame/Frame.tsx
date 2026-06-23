@@ -89,11 +89,11 @@ const Frame = forwardRef<FrameHandle, FrameProps>(({ navbarRef }, ref) => {
       >
         <div
           onClick={openNavbar}
-          className="flex flex-row gap-4 text-black lg:text-xl text-5xl"
+          className="flex flex-row lg:gap-4 gap-10 text-black lg:text-xl text-5xl"
         >
           <ArrowIcon
             className={`
-              cursor-grow transition-transform ease-in-out duration-[1s] text-[#000000] size-[60px] lg:size-[30px]
+              cursor-grow transition-transform ease-in-out duration-[1s] text-[#000000] lg:size-[30px] size-[80px]
               ${navOpen ? "rotate-60" : "rotate-0"}
             `}
           />
@@ -113,12 +113,18 @@ const Frame = forwardRef<FrameHandle, FrameProps>(({ navbarRef }, ref) => {
     }  // puedes reutilizar la de top
   `}
       >
-        <h2 className="text-left text-black lg:text-xs text-3xl font-semibold">
-          © Daniel Martín Ruiz | {year}
-        </h2>
+        <div className="flex lg:flex-row flex-col-reverse lg:gap-10 ">
+          <h2 className="text-left text-black lg:text-xs text-3xl font-semibold">
+            © Daniel Martín Ruiz | {year}
+          </h2>
+          <h2 className="text-left text-black lg:text-xs text-3xl right-0 font-semibold">
+            Daniel.mar.ruiz.28@gmail.com
+          </h2>
+        </div>
+
         <div
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          className={`cursor-grow lg:size-[40px] size-[60px] flex items-center justify-center transition-all duration-300 ${scrollProgress === 0 ? "pointer-events-none opacity-0" : "pointer-events-auto opacity-100"}`}
+          className={`cursor-grow lg:size-[40px] size-[80px] flex items-center justify-center transition-all duration-300 ${scrollProgress === 0 ? "pointer-events-none opacity-0" : "pointer-events-auto opacity-100"}`}
           style={{
             WebkitMask: `conic-gradient(#000 ${
               scrollProgress * 360 + 0.1
@@ -128,7 +134,7 @@ const Frame = forwardRef<FrameHandle, FrameProps>(({ navbarRef }, ref) => {
             }deg, transparent 0deg)`,
           }}
         >
-          <ArrowIcon className="rotate-180 text-black lg:size-[30px] size-[60px]" />
+          <ArrowIcon className="rotate-180 text-black lg:size-[30px] size-[80px]" />
         </div>
       </div>
 
