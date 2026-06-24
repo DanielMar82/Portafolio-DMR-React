@@ -49,26 +49,26 @@ const Navbar = forwardRef<NavbarHandle, NavbarProps>(({ goTo }, ref) => {
       `}
       >
         <button
-          className="flex flex-col gap-3 items-center"
+          className="flex flex-col gap-3 items-center cursor-grow cursor-none"
           onClick={() => goTo("/")}
         >
-          <HomeIcon className="cursor-grow cursor-none lg:size-20 size-33 text-[#000000]" />
+          <HomeIcon className="lg:size-20 size-33 text-[#000000]" />
           <h2 className="font-medium lg:text-3xl lg:block hidden">Inicio</h2>
         </button>
 
         <button
-          className="flex flex-col gap-3 items-center"
+          className="flex flex-col gap-3 items-center cursor-grow cursor-none"
           onClick={() => goTo("/personal")}
         >
-          <PersonalIcon className="cursor-grow cursor-none lg:size-20 size-33 text-[#000000]" />
+          <PersonalIcon className="lg:size-20 size-33 text-[#000000]" />
           <h2 className="font-medium lg:text-3xl lg:block hidden">Personal</h2>
         </button>
 
         <button
-          className="flex flex-col gap-3 items-center"
+          className="flex flex-col gap-3 items-center cursor-grow cursor-none"
           onClick={() => goTo("/proyectos")}
         >
-          <ProyectosIcon className="cursor-grow cursor-none lg:size-20 size-33 text-[#000000]" />
+          <ProyectosIcon className="lg:size-20 size-33 text-[#000000]" />
           <h2 className="font-medium lg:text-3xl lg:block hidden">Proyectos</h2>
         </button>
       </main>

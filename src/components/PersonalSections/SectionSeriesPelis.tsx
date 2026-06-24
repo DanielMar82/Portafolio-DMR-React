@@ -36,7 +36,7 @@ const SectionSeriesPelis = () => {
             <article className="scroll-appear scroll-left relative bg-[url('/personalImages/pelisSeries/ImgPeli1.jpg')] bg-cover bg-center rounded-3xl lg:h-[250px] lg:w-[450px] h-[200px] w-[400px] shadow-[20px_20px_30px_rgba(0,0,0,0.25)] group overflow-hidden z-10 ">
               <Link
                 to="https://www.imdb.com/es-es/title/tt0245429/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_el%20viaje%20de"
-                className="cursor-grow"
+                className="cursor-grow cursor-none"
                 target="_blank"
               >
                 <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out flex items-center justify-center rounded-3xl">
@@ -50,7 +50,7 @@ const SectionSeriesPelis = () => {
             <article className="scroll-appear scroll-left relative bg-[url('/personalImages/pelisSeries/ImgPeli2.jpg')] bg-cover bg-center rounded-3xl lg:h-[400px] lg:w-[280px] h-[350px] w-[250px]  shadow-[20px_20px_30px_rgba(0,0,0,0.25)] group overflow-hidden z-10">
               <Link
                 to="https://www.imdb.com/es-es/title/tt3783958/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_Lalaland"
-                className="cursor-grow"
+                className="cursor-grow cursor-none"
                 target="_blank"
               >
                 <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out flex items-center justify-center rounded-3xl">
@@ -64,7 +64,7 @@ const SectionSeriesPelis = () => {
             <article className="scroll-appear scroll-left relative bg-[url('/personalImages/pelisSeries/ImgPeli3.jpg')] bg-cover bg-center rounded-3xl lg:h-[250px] lg:w-[450px] h-[200px] w-[400px]  shadow-[20px_20px_30px_rgba(0,0,0,0.25)] group overflow-hidden z-10">
               <Link
                 to="https://www.imdb.com/es-es/title/tt0137523/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_fight"
-                className="cursor-grow"
+                className="cursor-grow cursor-none"
                 target="_blank"
               >
                 <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out flex items-center justify-center rounded-3xl">
@@ -78,7 +78,7 @@ const SectionSeriesPelis = () => {
             <article className="scroll-appear scroll-left relative bg-[url('/personalImages/pelisSeries/ImgPeli4.jpg')] bg-cover bg-center rounded-3xl lg:h-[400px] lg:w-[280px] h-[350px] w-[250px]  shadow-[20px_20px_30px_rgba(0,0,0,0.25)] group overflow-hidden z-10">
               <Link
                 to="https://www.imdb.com/es-es/title/tt0243794/?ref_=nv_sr_srsg_0_tt_6_nm_2_in_0_q_el%20bola"
-                className="cursor-grow"
+                className="cursor-grow cursor-none"
                 target="_blank"
               >
                 <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out flex items-center justify-center rounded-3xl">
@@ -94,7 +94,7 @@ const SectionSeriesPelis = () => {
             <article className="scroll-appear scroll-right relative bg-[url('/personalImages/pelisSeries/ImgSerie1.jpg')] bg-cover bg-center rounded-3xl lg:h-[400px] lg:w-[280px] h-[350px] w-[250px]  shadow-[20px_20px_30px_rgba(0,0,0,0.25)] group overflow-hidden z-10">
               <Link
                 to="https://www.imdb.com/es-es/title/tt0903747/"
-                className="cursor-grow"
+                className="cursor-grow cursor-none"
                 target="_blank"
               >
                 <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out flex items-center justify-center rounded-3xl">
@@ -107,7 +107,7 @@ const SectionSeriesPelis = () => {
             <article className="scroll-appear scroll-right relative bg-[url('/personalImages/pelisSeries/ImgSerie2.jpg')] bg-cover bg-center rounded-3xl lg:h-[250px] lg:w-[450px] h-[200px] w-[400px]  shadow-[20px_20px_30px_rgba(0,0,0,0.25)] group overflow-hidden z-10">
               <Link
                 to="https://www.imdb.com/es-es/title/tt0944947/?ref_=nv_sr_srsg_0_tt_8_nm_0_in_0_q_juego%20de"
-                className="cursor-grow"
+                className="cursor-grow cursor-none"
                 target="_blank"
               >
                 <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out flex items-center justify-center rounded-3xl">
@@ -120,7 +120,7 @@ const SectionSeriesPelis = () => {
             <article className="scroll-appear scroll-right relative bg-[url('/personalImages/pelisSeries/ImgSerie3.jpg')] bg-cover bg-center rounded-3xl lg:h-[400px] lg:w-[280px] h-[350px] w-[250px]  shadow-[20px_20px_30px_rgba(0,0,0,0.25)] group overflow-hidden z-10">
               <Link
                 to="https://www.imdb.com/es-es/title/tt5753856/?ref_=fn_t_1"
-                className="cursor-grow"
+                className="cursor-grow cursor-none"
                 target="_blank"
               >
                 <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out flex items-center justify-center rounded-3xl">
@@ -131,7 +131,7 @@ const SectionSeriesPelis = () => {
             <article className="scroll-appear scroll-right relative bg-[url('/personalImages/pelisSeries/ImgSerie4.jpg')] bg-cover bg-center rounded-3xl lg:h-[250px] lg:w-[450px] h-[200px] w-[400px]  shadow-[20px_20px_30px_rgba(0,0,0,0.25)] group overflow-hidden z-10">
               <Link
                 to="https://www.imdb.com/es-es/title/tt1355642/?ref_=nv_sr_srsg_3_tt_8_nm_0_in_0_q_full%20metal%20a"
-                className="cursor-grow"
+                className="cursor-grow cursor-none"
                 target="_blank"
               >
                 <div className="absolute inset-0 bg-black/80 opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out flex items-center justify-center rounded-3xl">
